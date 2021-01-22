@@ -9,7 +9,8 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import store from './app/redux/store';
-import Route from './app/routes';
+//import Route from './app/routes';
+import Products from './app/pages/Products';
 import {
   SafeAreaView,
   StyleSheet,
@@ -34,8 +35,8 @@ export default class App extends Component {
     return (
       <NavigationContainer>
         <Provider store={store}>
-          <Route />
-
+          
+          <Products />
         </Provider>
       </NavigationContainer>
     )
