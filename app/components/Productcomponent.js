@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     addBtn: {
         borderRadius: 30,
         margin: 10,
-        backgroundColor: 'yellow'
+        backgroundColor: 'blue'
     },
     text: {
         color: '#fff',

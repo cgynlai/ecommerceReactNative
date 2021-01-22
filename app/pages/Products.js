@@ -8,12 +8,12 @@ import { fetchProducts } from '../redux/actions/productAction';
 //import Cart from '../components/Cart.component';
 
 class Products extends Component {
-    // static navigationOptions = ({navigation}) => {
-    //   return {
-    //     headerTitle: 'Products',
+    static navigationOptions = ({navigation}) => {
+      return {
+        headerTitle: 'Products',
         
-    //   }
-    // }
+      }
+    }
     constructor(props) {
         super(props);
     }
@@ -31,16 +31,18 @@ class Products extends Component {
       return (
           <View style={styles.container}>
             
-          <View style={styles.body}>
-            <ScrollView>
+          
+       
             <FlatList 
+            numColumns={2}
             data={products} 
             renderItem={({item}) => <Product item={item} addItemsToCart={this.addItemsToCart} product={item}/>}
             keyExtractor ={(item) => item.id}
-            ItemSeparatorComponent= {()=> <View style={{height:0.5, backgroundColor:'#34495e90'}}/> }/>
-            </ScrollView>
+            
+            />
+         
           </View>
-        </View>
+       
    
       );
     }
@@ -48,7 +50,7 @@ class Products extends Component {
   
   const styles = StyleSheet.create({
       container: {
-          flex: 1
+       flex: 1,
       },
       body: {
         flex: 1,
