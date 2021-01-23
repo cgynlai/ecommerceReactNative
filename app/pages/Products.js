@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, FlatList, ScrollView } from 'react-native';
+import { View, StyleSheet, FlatList, ScrollView,Text } from 'react-native';
 import { connect } from 'react-redux';
 import Product from '../components/Productcomponent';
 import { addToCart } from '../redux/actions/cartAction';
@@ -8,12 +8,7 @@ import { fetchProducts } from '../redux/actions/productAction';
 //import Cart from '../components/Cart.component';
 
 class Products extends Component {
-    static navigationOptions = ({navigation}) => {
-      return {
-        headerTitle: 'Products',
-        
-      }
-    }
+    
     constructor(props) {
         super(props);
     }
@@ -27,8 +22,12 @@ class Products extends Component {
     }
   
     render() {
-      const { products, navigation } = this.props
+      const { products, navigation } = this.props;
+      if(!products) return <View><Text>Loading...</Text></View>
+      
       return (
+       //test revert here
+         
           <View style={styles.container}>
             
           
