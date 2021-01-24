@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { View, StyleSheet, FlatList, ScrollView } from 'react-native';
+import React, { Component, useState, useEffect } from 'react';
+import { View, StyleSheet, FlatList, ScrollView,Text } from 'react-native';
 import { connect } from 'react-redux';
 import Product from '../components/Productcomponent';
 import { addToCart } from '../redux/actions/cartAction';
@@ -7,46 +7,41 @@ import { fetchProducts } from '../redux/actions/productAction';
 //import Logo from '../components/Logo.component';
 //import Cart from '../components/Cart.component';
 
-class Products extends Component {
-    static navigationOptions = ({navigation}) => {
-      return {
-        headerTitle: 'Products',
-        
-      }
-    }
-    constructor(props) {
-        super(props);
+const Products = (props) => {
+    useEffect(() => {
+    props.fetchProducts();  
+    })
+    
+  
+    const addItemsToCart = (product) => {
+        props.addToCart(product);
     }
   
-    componentDidMount = () => {
-      this.props.fetchProducts();
-    }
-  
-    addItemsToCart = (product) => {
-        this.props.addToCart(product);
-    }
-  
-    render() {
-      const { products, navigation } = this.props
+
+      const { products, navigation } = props;
+      
+      
       return (
+       //test revert here
+         
           <View style={styles.container}>
             
-          
+          <View style={styles.body}>
        
             <FlatList 
             numColumns={2}
             data={products} 
-            renderItem={({item}) => <Product item={item} addItemsToCart={this.addItemsToCart} product={item}/>}
+            renderItem={({item}) => <Product item={item} addItemsToCart={addItemsToCart} product={item}/>}
             keyExtractor ={(item) => item.id}
-            
+            ItemSeparatorComponent= {()=> <View style={{height:0.5, backgroundColor:'#34495e90'}}/> }
             />
          
           </View>
-       
+       </View>
    
       );
     }
-  }
+  
   
   const styles = StyleSheet.create({
       container: {
