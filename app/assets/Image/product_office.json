@@ -1,0 +1,322 @@
+{
+  "product" : [
+      {
+          "name" : "noodle",
+          "Ingredients" : "Wheat flour, salt and water",
+          "weight": "340g",
+          "country": "China",
+          "description": "Non-fried Shanghai style noodle. Good for soup and stir frying.",
+          "image": "Image/dry_noodle.jpg",
+          "href": "noodle.html",
+          "price": "$1.80"
+      },
+      {
+         "name": "Udon",
+         "Ingredients": "Wheat flour, tapioca starch,salt and water",
+         "weight": "400g",
+         "country": "Korean",
+         "description": "Korean udon. Good for soup and stir frying.",
+         "image": "Image/Udon.jpg",
+         "href": "udon.html",
+         "price": "$3.50"
+      },
+      {
+         "name": "cooking_oil",
+         "Ingredients": "refined palm oil, peanut oil",
+         "weight": "1.5L",
+         "country of Origin": "Malaysia",
+         "description": "High quality cooking oil, rich in Vitamin E. Ideal for cooking, dressing salads and cold dishes.",
+         "image": "Image/cooking_oil.jpg",
+         "href": ".html",
+         "price": "$9.90",
+         "Sold": "522",
+         "Stock": "30"
+         "cat_id": "cooking oil"
+      },
+
+      {
+         "name": "cracker",
+         "Ingredients": "wheat cereal, Vitamin A,B1, B2,B3, calcium and sugar.",
+         "weight": "180g",
+         "country of Origin": "Thailand",
+         "description": "Cracker with unique combination of essential nutrients containing vitamins and minerals. ",
+         "image": "Image/Cracker.jpg",
+         "href": ".html",
+         "price": "$4.90",
+         "Sold": "367",
+         "Stock": "26"
+      },
+
+      {
+         "name": "Nutella",
+         "Ingredients": "Hazelnuts 13%, Sugar, Vegetable fat, skimmed milk powder, emulsifier and lecithin.",
+         "weight": "680g",
+         "country of Origin": "Australia",
+         "description": "Hazelnut spread with Cocoa. Enjoy your breakfast with great and unique taste.",
+         "image": "Image/nutella.jpg",
+         "href": ".html",
+         "price": "$8.90",
+         "Sold": "567",
+         "Stock": "65"
+      },
+
+      {
+         "name": "Potato_chip",
+         "Ingredients": "Potato, salt, vegetable oil and flavoring",
+         "weight": "185g",
+         "country of Origin": "USA",
+         "description": "Classic potato chips. Snacks for your leisure time.",
+         "image": "Image/chip.jpg",
+         "href": ".html",
+         "price": "$4.90",
+         "Sold": "189",
+         "Stock": "79"
+      },
+
+      {
+         "name": "Pasta",
+         "Ingredients": "wheat flour and salt",
+         "weight": "125g",
+         "country of Origin": "",
+         "description": "Italy",
+         "image": "Image/pasta.jpg",
+         "href": ".html",
+         "price": "$2.90",
+         "Sold": "655",
+         "Stock": "70"
+      },
+      {
+         "name": "Oatmeal",
+         "Ingredients": "Oat,fruit grain and sugar.",
+         "weight": "1kg",
+         "country of Origin": "Australia",
+         "description": "Rich in fiber, protein and beta glucan. Just add hot water.",
+         "image": "Image/oatmeal.jpg",
+         "href": ".html",
+         "price": "$4.90",
+         "Sold": "233",
+         "Stock": "70"
+      },
+      {
+         "name": "Tuna",
+         "Ingredients": "Tuna solid, extra virgin olive oil and chili.",
+         "weight": "33g",
+         "country of Origin": "Thailand",
+         "description": "Tuna in extra virgin olive oil, consumer healthier choice 2019.",
+         "image": "Image/Tuna.jpg",
+         "href": ".html",
+         "price": "$1.90",
+         "Sold": "639",
+         "Stock": "230"
+      },
+      {
+         "name": "Mackerel",
+         "Ingredients": "Mackerel, Tomato sauce and salt",
+         "weight": "425g",
+         "country of Origin": "China",
+         "description": "Penguin high quality ready to eat mackerel in tomato sauce.",
+         "image": "Image/Mackerelnew.jpg",
+         "href": ".html",
+         "price": "$2.90",
+         "Sold": "376",
+         "Stock": "300"
+      },
+{
+         "name": "Chilli Sauce",
+         "Ingredients": "Chilli, permitted flavour and sugar.",
+         "weight": "380ml",
+         "country of Origin": "Thailand",
+         "description": "Maggie spicy chilli sauce ",
+         "image": "Image/chilli sauce.jpg",
+         "href": ".html",
+         "price": 4.90,
+         "Sold": "367",
+         "Stock": "26",
+         "cat_id": "sauce"
+      },
+{
+         "name": "Chips More",
+         "Ingredients": "Choco, flour,permitted flavour and sugar.",
+         "weight": "380g",
+         "country of Origin": "Thailand",
+         "description": "Chips more cookie ",
+         "image": "Image/chips more.jpg",
+         "href": ".html",
+         "price": 3.90,
+         "Sold": "397",
+         "Stock": "186",
+         "cat_id": "cookie"
+      },
+
+{
+         "name": "Sardine",
+         "Ingredients": "Sardine, Tomato sauce and salt",
+         "weight": "225g",
+         "country of Origin": "China",
+         "description": "Marine high quality ready to eat sardine in tomato sauce.",
+         "image": "Image/sardine.jpg",
+         "href": ".html",
+         "price": 2.90,
+         "Sold": "360",
+         "Stock": "203"
+         "cat_id": "canned food"
+      },
+
+{
+         "name": "Calbury",
+         "Ingredients": "Choco, skimmed milk and permitted flavour",
+         "weight": "425g",
+         "country of Origin": "China",
+         "description": "Calbury Milk Choco.",
+         "image": "Image/calbury chocoA.jpg",
+         "href": ".html",
+         "price": 4.90,
+         "Sold": "76",
+         "Stock": "300"
+         "cat_id": "snack"
+      },
+
+{
+         "name": "Cashew Nuts",
+         "Ingredients": "Cashew nuts and salt",
+         "weight": "225g",
+         "country of Origin": "China",
+         "description": "Tong Garden salted cashew nuts",
+         "image": "Image/cashew nut.jpg",
+         "href": ".html",
+         "price": 2.90,
+         "Sold": "233",
+         "Stock": "730"
+         "cat_id": "snack"
+      },
+
+{
+         "name": "Lay's Potato",
+         "Ingredients": "Potato, salt, vegetable oil and chilli",
+         "weight": "185g",
+         "country of Origin": "USA",
+         "description": "Classic potato chips with hot spicy squid flavor.",
+         "image": "Image/potato chips.jpg",
+         "href": ".html",
+         "price": 4.90,
+         "Sold": "189",
+         "Stock": "79",
+         "cat_id": "snack"
+      },
+{
+         "name": "Knife cooking oil",
+         "Ingredients": "Blended peanut oil",
+         "weight": "1.5L",
+         "country of Origin": "Malaysia",
+         "description": "High quality cooking oil, rich in Vitamin E. Ideal for cooking, dressing salads and cold dishes.",
+         "image": "Image/knife cooking oil.jpg",
+         "href": ".html",
+         "price": 7.90,
+         "Sold": "223",
+         "Stock": "329"
+         "cat_id": "cooking oil"
+      },
+
+{
+         "name": "Oyster Sauce",
+         "Ingredients": "Oyster, soy and permitted flavor.",
+         "weight": "380ml",
+         "country of Origin": "Thailand",
+         "description": "Maggie spicy chilli sauce ",
+         "image": "Image/oyster.jpg",
+         "href": ".html",
+         "price": 6.90,
+         "Sold": "37",
+         "Stock": "93",
+         "cat_id": "sauce"
+      },
+
+{
+         "name": "Pasta Sauce",
+         "Ingredients": "Tomatoes, garlic, herbs and permitted flavor.",
+         "weight": "380ml",
+         "country of Origin": "Thailand",
+         "description": "Leggo's Bolognese sauce with garlic and herbs.",
+         "image": "Image/tomato sauce.jpg",
+         "href": ".html",
+         "price": 5.90,
+         "Sold": "311",
+         "Stock": "79",
+         "cat_id": "sauce"
+      },
+{
+         "name": "Soy Sauce",
+         "Ingredients": "Water, soybeans, wheat and salt.",
+         "weight": "480ml",
+         "country of Origin": "Thailand",
+         "description": "Kikkoman naturally brewed all purposed seasoning ",
+         "image": "Image/oyster.jpg",
+         "href": ".html",
+         "price": 5.90,
+         "Sold": "56",
+         "Stock": "41",
+         "cat_id": "sauce"
+      },
+
+{
+         "name": "Corn Flakes",
+         "Ingredients": "Corn, Cereal,fruit grain and sugar.",
+         "weight": "450g",
+         "country of Origin": "Australia",
+         "description": "Rich in fiber, protein and beta glucan. Just add hot water.",
+         "image": "Image/corn flakes.jpg",
+         "href": ".html",
+         "price": 3.50,
+         "Sold": "85",
+         "Stock": "102",
+         "cat_id": "cereal"
+      },
+
+{
+         "name": "Nestum Grain",
+         "Ingredients": "Grain, corn, cereal and sugar.",
+         "weight": "650g",
+         "country of Origin": "Australia",
+         "description": "Rich in fiber, protein and beta glucan. Just add hot water.",
+         "image": "Image/nestum grain.jpg",
+         "href": ".html",
+         "price": 5.50,
+         "Sold": "55",
+         "Stock": "29",
+         "cat_id": "cereal"
+      },
+{
+         "name": "Butter Cookies",
+         "Ingredients": "Choco, Butter, flour and sugar.",
+         "weight": "790g",
+         "country of Origin": "Thailand",
+         "description": "Chips more cookie ",
+         "image": "Image/discount4.jpg",
+         "href": ".html",
+         "price": 12.90,
+         "Sold": "39",
+         "Stock": "16",
+         "cat_id": "cookie"
+      },
+
+{
+         "name": "Honsen Pineapple",
+         "Ingredients": "Pineapples slices and syrup",
+         "weight": "325g",
+         "country of Origin": "China",
+         "description": "Honsen canned pineapples slices in syrup.",
+         "image": "Image/canned fruit.jpg",
+         "href": ".html",
+         "price": 3.90,
+         "Sold": "60",
+         "Stock": "23"
+         "cat_id": "canned food"
+      },
+
+
+
+  ] 
+
+
+
+}

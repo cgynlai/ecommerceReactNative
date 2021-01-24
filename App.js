@@ -9,7 +9,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import store from './app/redux/store';
-//import Route from './app/routes';
+import Route from './app/routes';
 import Products from './app/pages/Products';
 import {
   SafeAreaView,
@@ -33,12 +33,13 @@ import { NavigationContainer } from '@react-navigation/native';
 export default class App extends Component {
   render() {
     return (
-      <NavigationContainer>
+      
         <Provider store={store}>
-          
-          <Products />
+          <NavigationContainer>
+          <Route />
+          </NavigationContainer>
         </Provider>
-      </NavigationContainer>
+      
     )
   }
 }
