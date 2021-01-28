@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
-import { View, StyleSheet, FlatList, ScrollView,Text } from 'react-native';
+import { View, StyleSheet, FlatList, TouchableOpacity, ScrollView,Text } from 'react-native';
 import { connect } from 'react-redux';
 import Product from '../components/Productcomponent';
 import { addToCart } from '../redux/actions/cartAction';
@@ -17,6 +17,10 @@ const Products = (props) => {
         props.addToCart(product);
     }
   
+    const detailpage = (item) => {
+        navigation.navigate('Productdetail', item )
+        console.log(item.name);
+    }
 
       const { products, navigation } = props;
       
@@ -31,8 +35,12 @@ const Products = (props) => {
             <FlatList 
             numColumns={2}
             data={products} 
-            renderItem={({item}) => <Product item={item} addItemsToCart={addItemsToCart} product={item}/>}
-            keyExtractor ={(item) => item.id}
+            renderItem={({item}) => (
+            
+            <Product item={item} addItemsToCart={()=>addItemsToCart(item)} product={item} detailpage={()=>detailpage(item)}/>
+         
+            )}
+            keyExtractor ={(item) => item.name}
             ItemSeparatorComponent= {()=> <View style={{height:0.5, backgroundColor:'#34495e90'}}/> }
             />
          

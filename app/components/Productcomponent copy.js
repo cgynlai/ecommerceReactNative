@@ -16,8 +16,7 @@ function Product (props, { navigation }) {
     }
 
     const navProdetail = (props) => {
-        props.detailpage(props.item);
-    
+        props.detailpage()
     }
      
    
