@@ -40,7 +40,7 @@ const Products = (props) => {
             <Product item={item} addItemsToCart={()=>addItemsToCart(item)} product={item} detailpage={()=>detailpage(item)}/>
          
             )}
-            keyExtractor ={(item) => item.name}
+            keyExtractor ={(item) => item.name+Math.random()}
             ItemSeparatorComponent= {()=> <View style={{height:0.5, backgroundColor:'#34495e90'}}/> }
             />
          
