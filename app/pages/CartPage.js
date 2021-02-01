@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import {
+    NavigationContainer,
+    useFocusEffect,
+  } from '@react-navigation/native';
 import { Text, View, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import CartItems from '../components/CartItem';
 
-class CartPage extends Component {
-    render() {
-        const { cartItems, cartTotal } = this.props;
+const CartPage =( {cartItems}) => {
+    
+       
+        //const { cartItems, cartTotal } = this.props;
         return (
             <View>
                 <View>
@@ -21,7 +26,7 @@ class CartPage extends Component {
            
         )
     }
-}
+
 
 const mapStateToProps = (state) => ({
     cartItems: state.cart.cart,
