@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Product from '../components/Productcomponent';
 import { addToCart } from '../redux/actions/cartAction';
 import { fetchProducts } from '../redux/actions/productAction';
+import { useFocusEffect } from '@react-navigation/native';
 //import Logo from '../components/Logo.component';
 //import Cart from '../components/Cart.component';
 
@@ -11,6 +12,7 @@ const Products = (props) => {
     useEffect(() => {
     props.fetchProducts();  
     })
+    
     
   
     const addItemsToCart = (product) => {
