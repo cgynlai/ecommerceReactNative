@@ -3,7 +3,7 @@ import {
     NavigationContainer,
     useFocusEffect,
   } from '@react-navigation/native';
-import { Text, View, FlatList } from 'react-native';
+import { Text, View, FlatList, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import CartItems from '../components/CartItem';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -15,7 +15,7 @@ const CartPage =( {cartItems}) => {
         return (
             <View>
                 <View>
-                <Text> Your Cart List </Text>
+                <Text style={styles.text}> Your Cart List </Text>
             </View>
       
             <FlatList data={cartItems}
@@ -37,6 +37,17 @@ const CartPage =( {cartItems}) => {
            
         )
     }
+
+    const styles = StyleSheet.create ({
+       text : {
+        textAlign: 'center',
+        color: 'white',
+        fontSize:18,
+        backgroundColor: '#fc7e35',
+        fontWeight:'bold',
+        padding: 5
+       } 
+    })
 
 
 const mapStateToProps = (state) => ({

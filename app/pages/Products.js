@@ -43,7 +43,7 @@ const Products = (props) => {
          
             )}
             keyExtractor ={(item) => item.name+Math.random()}
-            ItemSeparatorComponent= {()=> <View style={{height:0.5, backgroundColor:'#34495e90'}}/> }
+            // ItemSeparatorComponent= {()=> <View style={{height:0.5, backgroundColor:'#34495e90'}}/> }
             />
          
           </View>
@@ -59,7 +59,8 @@ const Products = (props) => {
       },
       body: {
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: 'white'
       }
   });
   const mapStateToProps = (state) => ({

@@ -22,8 +22,8 @@ const Productdetail = ({ route, navigation,addToCart}) =>{
             <View style={styles.imagecontainer}>
             <Image source={route.params.image} style={styles.image} />
             </View>
-            <Text style={styles.titleText}>{route.params.name}{"\n\n"}${item.price}</Text>
-            <Text style={styles.baseText}>{route.params.description}{"\n\n"} {item.weight}</Text>
+            <Text style={styles.titleText}>{route.params.name}{"\n"}${item.price}</Text>
+            <Text style={styles.baseText}>{route.params.description}{"\n"} {item.weight}</Text>
           
     
             <View style={styles.imagecontainer}>
@@ -44,7 +44,8 @@ const styles = StyleSheet.create({
        
     },
     imagecontainer: {
-        alignItems: 'center'
+        alignItems: 'center',
+        marginTop: 3
     },
     text: {
         fontSize: 10,
@@ -53,23 +54,26 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     image: {
-        width: 300,
-        height: 300,
+        width: 280,
+        height: 280,
         marginBottom:10,
         alignItems: 'center'
     },
     addBtn: {
         borderRadius: 30,
-        margin: 10,
-        backgroundColor: 'blue',
+        margin: 5,
+        backgroundColor: '#a3c234',
         alignItems:"center",
         height: 50,
-        width: 245
+        width: 245,
+        justifyContent: 'center'
     },
     btntext: {
         color: '#fff',
         fontSize: 16,
-        padding: 10
+        padding: 10,
+        fontWeight: 'bold',
+        
     },
     baseText: {
         fontFamily: "Cochin",
