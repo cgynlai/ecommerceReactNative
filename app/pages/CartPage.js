@@ -14,7 +14,7 @@ const CartPage =( {cartItems}) => {
         //const { cartItems, cartTotal } = this.props;
         return (
             <View>
-                <View>
+                <View style={{marginBottom:5}}>
                 <Text style={styles.text}> Your Cart List </Text>
             </View>
       

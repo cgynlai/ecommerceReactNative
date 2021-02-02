@@ -8,18 +8,7 @@ import { ScrollView } from 'react-native-gesture-handler'
 
 export default function home({navigation}) {
     const {width} = Dimensions.get("window");
-    useFocusEffect(
-        React.useCallback(() => {
-          // Do something when the screen is focused
-          alert('screen focused')
-          navigation.navigate('Home');
-          return () => {
-            // Do something when the screen is unfocused
-            // Useful for cleanup functions
-            alert('screen not focused')
-          };
-        }, [])
-      );
+   
     
     return (
        <View style={styles.container}>
