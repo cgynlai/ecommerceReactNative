@@ -10,8 +10,8 @@ export default function (state=initialState, action){
         case ADD_TO_CART:
             return {
                 ...state,
-                cart: [action.payload, ...state.cart],
-                total: state.total + action.payload.cost
+                cart: action.payload,
+                total: state.total + action.payload.count
             }
         case REMOVE_FROM_CART:
              return {

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Product from '../components/Productcomponent';
 import { addToCart } from '../redux/actions/cartAction';
 import { fetchProducts } from '../redux/actions/productAction';
+import { useFocusEffect } from '@react-navigation/native';
 //import Logo from '../components/Logo.component';
 //import Cart from '../components/Cart.component';
 
@@ -11,6 +12,7 @@ const Products = (props) => {
     useEffect(() => {
     props.fetchProducts();  
     })
+    
     
   
     const addItemsToCart = (product) => {
@@ -41,7 +43,7 @@ const Products = (props) => {
          
             )}
             keyExtractor ={(item) => item.name+Math.random()}
-            ItemSeparatorComponent= {()=> <View style={{height:0.5, backgroundColor:'#34495e90'}}/> }
+            // ItemSeparatorComponent= {()=> <View style={{height:0.5, backgroundColor:'#34495e90'}}/> }
             />
          
           </View>
@@ -57,7 +59,8 @@ const Products = (props) => {
       },
       body: {
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: 'white'
       }
   });
   const mapStateToProps = (state) => ({
