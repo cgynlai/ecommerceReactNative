@@ -57,12 +57,12 @@ function MyTab() {
   
               if (route.name === 'Home') {
                 iconName = focused
-                  ? require('../assets/Image/homeB-black.png')
-                  : require('../assets/Image/homeB.png');
+                  ? require('../assets/Image/homeB.png')
+                  : require('../assets/Image/homeB-black.png');
               } else if (route.name === 'CART') {
-                iconName = focused ? require('../assets/Image/cartA.png') : require('../assets/Image/cartA-black.png');
+                iconName = focused ? require('../assets/Image/cartA.png') : require('../assets/Image/cartA.png');
               } else if (route.name === 'Products') {
-                iconName = focused ? require('../assets/Image/boxA.png') : require('../assets/Image/boxA-black.png');
+                iconName = focused ? require('../assets/Image/boxA.png') : require('../assets/Image/boxA.png');
               }
   
               // You can return any component that you like here!
