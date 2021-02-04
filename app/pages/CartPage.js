@@ -3,12 +3,12 @@ import {
     NavigationContainer,
     useFocusEffect,
   } from '@react-navigation/native';
-import { Text, View, FlatList, StyleSheet } from 'react-native';
+import { Text, View, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import CartItems from '../components/CartItem';
 import { ScrollView } from 'react-native-gesture-handler';
 
-const CartPage =( {cartItems}) => {
+const CartPage =( {cartItems, navigation}) => {
     
        
         //const { cartItems, cartTotal } = this.props;
@@ -27,11 +27,16 @@ const CartPage =( {cartItems}) => {
                     <Text style={{textAlign: 'right', fontSize: 16}}>
                        Total : ${(cartItems.reduce((acc,curr)=>acc + curr.price*curr.count,0)).toFixed(2)} 
                     </Text>
+                    <TouchableOpacity style={styles.addBtn} onPress={()=>navigation.navigate('Order')}>
+                    <Text style={styles.text}>Place Order</Text>
+                </TouchableOpacity>
                 </View>
+                
+                
             )
 
             }
-      
+            
             </View>
            
            
@@ -46,7 +51,14 @@ const CartPage =( {cartItems}) => {
         backgroundColor: '#fc7e35',
         fontWeight:'bold',
         padding: 5
-       } 
+       } ,
+       addBtn: {
+        textAlign: 'center',
+        borderRadius: 30,
+        margin: 10,
+        backgroundColor: '#fc7e35',
+        width: 150
+    }
     })
 
 

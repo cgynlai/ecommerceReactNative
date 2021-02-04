@@ -8,9 +8,11 @@ import Products from '../pages/Products';
 //import Checkout from '../pages/Checkout';
 import CartPage from '../pages/CartPage';
 import Receipt from '../pages/Receipt';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import Order from '../pages/OrderPage';
 import Productdetail from '../pages/Productdetail';
 import Homepage from '../pages/home';
+
+
 
 
 // const Drawer = createDrawerNavigator();
@@ -48,6 +50,16 @@ function ProductStack() {
     )
 }
 
+function CartStack() {
+  return (
+      <Stack.Navigator>
+          <Stack.Screen name="Cart" component={CartPage}/>
+          <Stack.Screen name="Order" component={Order}/>
+          
+      </Stack.Navigator>
+  )
+}
+
 const Tab = createBottomTabNavigator();
 function MyTab() {
     return (
@@ -75,7 +87,7 @@ function MyTab() {
           }}>
         <Tab.Screen name="Home" component={HomeStack} />
         <Tab.Screen name="Products" component={ProductStack} />
-        <Tab.Screen name="CART" component={CartPage} />
+        <Tab.Screen name="CART" component={CartStack} />
         {/* <Tab.Screen name="Receipt" component={Receipt} /> */}
 
     </Tab.Navigator>  
