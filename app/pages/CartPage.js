@@ -27,9 +27,11 @@ const CartPage =( {cartItems, navigation}) => {
                     <Text style={{textAlign: 'right', fontSize: 16}}>
                        Total : ${(cartItems.reduce((acc,curr)=>acc + curr.price*curr.count,0)).toFixed(2)} 
                     </Text>
+                    
                     <TouchableOpacity style={styles.addBtn} onPress={()=>navigation.navigate('Order')}>
                     <Text style={styles.text}>Place Order</Text>
                 </TouchableOpacity>
+                
                 </View>
                 
                 
@@ -48,16 +50,17 @@ const CartPage =( {cartItems, navigation}) => {
         textAlign: 'center',
         color: 'white',
         fontSize:18,
-        backgroundColor: '#fc7e35',
         fontWeight:'bold',
         padding: 5
        } ,
        addBtn: {
+        
         textAlign: 'center',
         borderRadius: 30,
         margin: 10,
         backgroundColor: '#fc7e35',
-        width: 150
+        width: 150,
+        alignSelf: 'center'
     }
     })
 
