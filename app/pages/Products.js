@@ -4,9 +4,8 @@ import { connect } from 'react-redux';
 import Product from '../components/Productcomponent';
 import { addToCart } from '../redux/actions/cartAction';
 import { fetchProducts } from '../redux/actions/productAction';
-import { useFocusEffect } from '@react-navigation/native';
-//import Logo from '../components/Logo.component';
-//import Cart from '../components/Cart.component';
+
+
 
 const Products = (props) => {
     useEffect(() => {
@@ -21,12 +20,10 @@ const Products = (props) => {
   
     const detailpage = (item) => {
         navigation.navigate('Productdetail', item )
-        console.log(item.name);
     }
 
       const { products, navigation } = props;
-      
-      
+ 
       return (
        //test revert here
          

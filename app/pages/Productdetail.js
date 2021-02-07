@@ -8,14 +8,9 @@ const Productdetail = ({ route, navigation,addToCart}) =>{
     //const { item } = route.params;
    
     const item = route.params;
-    // const addItem = (item) =>{
-    //     props.addToCart(item);
-    // }
+    
     return (
-        // <View style={styles.container}>
-        // <Image source={route.params.image} style={{width:150,height:150}}/>    
-        //     <Text>{ route.params.name }</Text>
-        // </View>
+       
         
         <View style={styles.container}>
         <ScrollView>
@@ -38,7 +33,6 @@ const Productdetail = ({ route, navigation,addToCart}) =>{
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        // alignItems: 'center',
         margin: 0,
         backgroundColor: "white"
        

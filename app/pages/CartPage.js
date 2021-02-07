@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import {
-    NavigationContainer,
-    useFocusEffect,
-  } from '@react-navigation/native';
 import { Text, View, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import CartItems from '../components/CartItem';
-import { ScrollView } from 'react-native-gesture-handler';
+
 
 const CartPage =( {cartItems, navigation}) => {
     
@@ -15,7 +11,7 @@ const CartPage =( {cartItems, navigation}) => {
         return (
             <View>
                 <View style={{marginBottom:5}}>
-                <Text style={styles.text}> Your Cart List </Text>
+                <Text style={styles.textHead}> Your Cart List </Text>
             </View>
       
             <FlatList data={cartItems}
@@ -33,15 +29,13 @@ const CartPage =( {cartItems, navigation}) => {
                 </TouchableOpacity>
                 
                 </View>
-                
-                
+              
             )
 
             }
             
             </View>
-           
-           
+     
         )
     }
 
@@ -53,6 +47,14 @@ const CartPage =( {cartItems, navigation}) => {
         fontWeight:'bold',
         padding: 5
        } ,
+       textHead : {
+        textAlign: 'center',
+        color: 'black',
+        fontSize:18,
+        fontWeight:'bold',
+        padding: 5
+       } ,
+
        addBtn: {
         
         textAlign: 'center',
