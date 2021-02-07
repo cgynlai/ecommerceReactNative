@@ -42,7 +42,7 @@ export default function home({navigation}) {
                 <Image source={require('../assets/Image/soy_sauce.png')} style={{height:150, width:150, marginRight: 10}} resizeMode="contain"/>
                 <Image source={require('../assets/Image/tomato_sauce.png')} style={{height:150, width:150,marginRight: 10}} resizeMode="contain"/>
                 <Image source={require('../assets/Image/butter_cookie.png')} style={{height:150, width:150,marginRight: 10}} resizeMode="contain"/>
-                
+                <Image source={require('../assets/Image/oyster_sauce.jpg')} style={{height:150, width:150,marginRight: 10}} resizeMode="contain"/>
              
              </ScrollView>
              </View>
@@ -57,14 +57,8 @@ export default function home({navigation}) {
          </View>
              <View style={{height:155}}>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} snapToInterval={width} style={{height:155}} >
-            
-                
                 <Image source={require('../assets/Image/corn_flakes.jpg')} style={{height:150, width:150, marginRight:10}} resizeMode="contain"/>
-                
-                
-                <Image source={require('../assets/Image/oyster_sauce.jpg')} style={{height:150, width:150, marginRight: 10}} resizeMode="contain"/>
-                
-                
+                <Image source={require('../assets/Image/sardine.jpg')} style={{height:150, width:150, marginRight: 10}} resizeMode="contain"/>              
                 <Image source={require('../assets/Image/nestum_grain1.png')} style={{height:150, width:150,marginRight: 10}} resizeMode="contain"/>
                 <Image source={require('../assets/Image/cashew_nut.jpg')} style={{height:150, width:150,marginRight: 10}} resizeMode="contain"/>
                 <Image source={require('../assets/Image/potato_chips.jpg')} style={{height:150, width:150,marginRight: 10}} resizeMode="contain"/>

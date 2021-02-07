@@ -37,7 +37,7 @@ class CartItem extends Component {
 
 
         const { item, index } = this.props;
-        console.log(item);
+       // console.log(item);
         return (
             
                <Swipeout {...swipeSettings}>

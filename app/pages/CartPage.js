@@ -24,9 +24,9 @@ const CartPage =( {cartItems, navigation}) => {
             ItemSeparatorComponent= {()=> <View style={{height:0.3, backgroundColor:'#34495e90'}}/> } />
             {cartItems.length !==0 && (
                 <View>
-                    <Text style={{textAlign: 'right', fontSize: 16}}>
+                    {/* <Text style={{textAlign: 'right', fontSize: 16}}>
                        Total : ${(cartItems.reduce((acc,curr)=>acc + curr.price*curr.count,0)).toFixed(2)} 
-                    </Text>
+                    </Text> */}
                     
                     <TouchableOpacity style={styles.addBtn} onPress={()=>navigation.navigate('Order')}>
                     <Text style={styles.text}>Place Order</Text>

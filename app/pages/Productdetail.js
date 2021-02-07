@@ -6,7 +6,7 @@ import { addToCart } from '../redux/actions/cartAction';
 
 const Productdetail = ({ route, navigation,addToCart}) =>{
     //const { item } = route.params;
-    console.log(route.params.name);
+   
     const item = route.params;
     // const addItem = (item) =>{
     //     props.addToCart(item);
